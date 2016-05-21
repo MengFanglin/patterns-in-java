@@ -22,8 +22,5 @@ public abstract class AbstractOperation {
         this.numberB = numberB;
     }
 
-    public double getResult(){
-        double result = 0;
-        return result;
-    }
+    public abstract double getResult();
 }
