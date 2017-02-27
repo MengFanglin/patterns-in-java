@@ -1,8 +1,6 @@
-package im.dashen.patterns.adapter;
+package im.dashen.patterns.simplefactory.adapter;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class Client {
 

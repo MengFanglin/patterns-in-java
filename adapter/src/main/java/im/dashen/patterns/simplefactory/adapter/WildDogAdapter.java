@@ -1,4 +1,4 @@
-package im.dashen.patterns.adapter;
+package im.dashen.patterns.simplefactory.adapter;
 
 public class WildDogAdapter implements Lion {
     private WildDog wildDog;
