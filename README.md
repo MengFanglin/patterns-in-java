@@ -1,7 +1,7 @@
 # Patterns
 Design patterns implemented in Java
 
-## TODO
+## Progress
 * Creational
     - [ ] Simple Factory 
     - [ ] Factory Method
@@ -10,7 +10,7 @@ Design patterns implemented in Java
     - [ ] Prototype
     - [ ] Singleton
 * Strucrual
-    - [x] Adapter
+    - [x] [Adapter](adapter/README.md)
     - [ ] Bridge
     - [ ] Composite
     - [ ] Decorator
