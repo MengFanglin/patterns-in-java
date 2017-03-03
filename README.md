@@ -4,6 +4,7 @@
 ## 目录
 * 创建型
     - 🏠 [简单工厂(Simple Factory)](simple-factory/README.md)
+    - 🏭 [工厂方法(Factory Method)](factory-method/README.md)
 * 结构型
     - 🔌 [适配器(Adapter)](adapter/README.md)
 * 行为性
@@ -14,7 +15,7 @@ MIT © [Da Shen](http://dashen.im)
 ## 进度
 * 创建型
     - [x] 🏠 简单工厂(Simple Factory)
-    - [ ] 🏭 工厂方法(Factory Method)
+    - [X] 🏭 工厂方法(Factory Method)
     - [ ] 🔨 抽象工厂(Abstract Factory)
     - [ ] 👷 建造者(Builder)
     - [ ] 🐑 原型(Prototype)
