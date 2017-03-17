@@ -14,70 +14,79 @@ Wikipedia 上描述为
 
 修改上面门的例子。首先定义 `Door` 接口并做出几个实现
 
-```php
-interface Door {
-    public function getDescription();
+```java
+public interface Door {
+    String getDescription();
 }
 
-class WoodenDoor implements Door {
-    public function getDescription() {
-        echo 'I am a wooden door';
+public class WoodenDoor implements Door {
+    @Override
+    public String getDescription() {
+        return "Wooden door";
     }
 }
 
-class IronDoor implements Door {
-    public function getDescription() {
-        echo 'I am an iron door';
+public class IronDoor implements Door {
+    @Override
+    public String getDescription() {
+        return "Iron door";
     }
 }
 ```
 
 然后为每种门都定义相应的安装人员
 
-```php
-interface DoorFittingExpert {
-    public function getDescription();
+```java
+public interface DoorFittingExpert {
+    String getDescription();
 }
 
-class Welder implements DoorFittingExpert {
-    public function getDescription() {
-        echo 'I can only fit iron doors';
+public class Welder implements DoorFittingExpert {
+    @Override
+    public String getDescription() {
+        return "I can only fit iron door";
     }
 }
 
-class Carpenter implements DoorFittingExpert {
-    public function getDescription() {
-        echo 'I can only fit wooden doors';
+public class Carpenter implements DoorFittingExpert {
+    @Override
+    public String getDescription() {
+        return "I can only fit wooden door";
     }
 }
 ```
 
 现在定义我们的抽象工厂，它能为我们创建相关的一组对象，例如木门工厂将会创建木门及木门安装人员对象，而铁门工厂将会创建铁门及铁门安装人员对象。
 
-```php
-interface DoorFactory {
-    public function makeDoor() : Door;
-    public function makeFittingExpert() : DoorFittingExpert;
+```java
+public interface DoorFactory {
+    Door makeDoor();
+
+    DoorFittingExpert makeFittingExpert();
 }
 
 // 木门工厂将返回木匠及木门对象
-class WoodenDoorFactory implements DoorFactory {
-    public function makeDoor() : Door {
+public class WoodenDoorFactory implements DoorFactory {
+    @Override
+    public Door makeDoor() {
         return new WoodenDoor();
     }
 
-    public function makeFittingExpert() : DoorFittingExpert{
+    @Override
+    public DoorFittingExpert makeFittingExpert() {
         return new Carpenter();
     }
 }
 
 // 铁门工厂将返回铁门及相应的安装人员
-class IronDoorFactory implements DoorFactory {
-    public function makeDoor() : Door {
+public class IronDoorFactory implements DoorFactory {
+    @Override
+    public Door makeDoor() {
         return new IronDoor();
     }
 
-    public function makeFittingExpert() : DoorFittingExpert{
+    @Override
+    public DoorFittingExpert makeFittingExpert() {
         return new Welder();
     }
 }
@@ -85,23 +94,19 @@ class IronDoorFactory implements DoorFactory {
 
 然后可以这样使用
 
-```php
-$woodenFactory = new WoodenDoorFactory();
+```java
+DoorFactory woodenDoorFactory = new WoodenDoorFactory();
+Door woodenDoor = woodenDoorFactory.makeDoor();
+DoorFittingExpert carpenter = woodenDoorFactory.makeFittingExpert();
+System.out.println(carpenter.getDescription());
+System.out.println(woodenDoor.getDescription());
 
-$door = $woodenFactory->makeDoor();
-$expert = $woodenFactory->makeFittingExpert();
 
-$door->getDescription();  // Output: I am a wooden door
-$expert->getDescription(); // Output: I can only fit wooden doors
-
-// Same for Iron Factory
-$ironFactory = new IronDoorFactory();
-
-$door = $ironFactory->makeDoor();
-$expert = $ironFactory->makeFittingExpert();
-
-$door->getDescription();  // Output: I am an iron door
-$expert->getDescription(); // Output: I can only fit iron doors
+DoorFactory ironDoorFactory = new IronDoorFactory();
+Door ironDoor = ironDoorFactory.makeDoor();
+DoorFittingExpert welder = ironDoorFactory.makeFittingExpert();
+System.out.println(welder.getDescription());
+System.out.println(ironDoor.getDescription());
 ```
 
 可以看到木门工厂已经封装了 `木匠` 和 `木门` 而铁门工厂已经封闭了 `铁门` 和 `电焊工`。这样它就能确保，每次创建了一个门对象后，我们也可以得到其相应的安装人员对象。
