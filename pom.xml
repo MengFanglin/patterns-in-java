@@ -12,6 +12,7 @@
         <module>adapter</module>
         <module>simple-factory</module>
         <module>factory-method</module>
+        <module>abstract-factory</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
