@@ -6,6 +6,7 @@
     - 🏠 [简单工厂(Simple Factory)](simple-factory/README.md)
     - 🏭 [工厂方法(Factory Method)](factory-method/README.md)
     - 🔨 [抽象工厂(Abstract Factory)](abstract-factory/README.md)
+    - 👷 [建造者(Builder)](builder/README.md)
 * 结构型
     - 🔌 [适配器(Adapter)](adapter/README.md)
 * 行为性
@@ -18,7 +19,7 @@ MIT © [Da Shen](http://dashen.im)
     - [x] 🏠 简单工厂(Simple Factory)
     - [X] 🏭 工厂方法(Factory Method)
     - [X] 🔨 抽象工厂(Abstract Factory)
-    - [ ] 👷 建造者(Builder)
+    - [X] 👷 建造者(Builder)
     - [ ] 🐑 原型(Prototype)
     - [ ] 💍 单例(Singleton)
 * 结构型
