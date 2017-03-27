@@ -13,8 +13,6 @@ Wikipedia 上描述为
 简单来说，它能让你创建某个现有对象的克隆版本，然后你可按需对其进行修改，从而避免了从新创建一个对象并对其进行设置的所有麻烦。
 
 **编程示例**
-
-在 PHP 中, 可以非常容易地使用 `clone` 实现
  
 ```java
 public class im.dashen.patterns.prototype.Sheep implements Cloneable {
@@ -69,7 +67,7 @@ System.out.println("Name: " + dolly.getName());
 System.out.println("Category: " + dolly.getCategory());
 ```
 
-另外你也可以通过特殊方法 `__clone` 来定制克隆行为。
+另外你也可以通过复写 `clone()`方法来定制克隆行为。
 
 **何时使用？**
 
