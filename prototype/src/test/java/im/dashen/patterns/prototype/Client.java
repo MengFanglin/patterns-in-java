@@ -1,6 +1,7 @@
-import org.junit.Test;
+package im.dashen.patterns.prototype;
 
-import static org.junit.Assert.*;
+import im.dashen.patterns.prototype.Sheep;
+import org.junit.Test;
 
 public class Client {
 

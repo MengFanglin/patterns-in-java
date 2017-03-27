@@ -1,3 +1,5 @@
+package im.dashen.patterns.prototype;
+
 public class Sheep implements Cloneable {
 
     private String name;
