@@ -8,6 +8,8 @@
     - 🔨 [抽象工厂(Abstract Factory)](abstract-factory/README.md)
     - 👷 [建造者(Builder)](builder/README.md)
     - 🐑 [原型(Prototype)](prototype/README.md)
+    - 💍 [单例(Singleton)](singleton/README.md)
+
 * 结构型
     - 🔌 [适配器(Adapter)](adapter/README.md)
 * 行为性
@@ -22,7 +24,7 @@ MIT © [Da Shen](http://dashen.im)
     - [X] 🔨 抽象工厂(Abstract Factory)
     - [X] 👷 建造者(Builder)
     - [X] 🐑 原型(Prototype)
-    - [ ] 💍 单例(Singleton)
+    - [X] 💍 单例(Singleton)
 * 结构型
     - [x] 🔌 适配器(Adapter)
     - [ ] 🚡 桥接(Bridge)
