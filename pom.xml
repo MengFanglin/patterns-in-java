@@ -15,6 +15,7 @@
         <module>abstract-factory</module>
         <module>prototype</module>
         <module>singleton</module>
+        <module>bridge</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
