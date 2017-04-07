@@ -9,10 +9,10 @@
     - 👷 [建造者(Builder)](builder/README.md)
     - 🐑 [原型(Prototype)](prototype/README.md)
     - 💍 [单例(Singleton)](singleton/README.md)
-    - 🚡 [桥接(Bridge)](bridge/README.md)
 
 * 结构型
     - 🔌 [适配器(Adapter)](adapter/README.md)
+    - 🚡 [桥接(Bridge)](bridge/README.md)
 * 行为性
 
 ## 证书 
