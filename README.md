@@ -9,6 +9,7 @@
     - 👷 [建造者(Builder)](builder/README.md)
     - 🐑 [原型(Prototype)](prototype/README.md)
     - 💍 [单例(Singleton)](singleton/README.md)
+    - 🚡 [桥接(Bridge)](bridge/README.md)
 
 * 结构型
     - 🔌 [适配器(Adapter)](adapter/README.md)
@@ -27,7 +28,7 @@ MIT © [Da Shen](http://dashen.im)
     - [X] 💍 单例(Singleton)
 * 结构型
     - [x] 🔌 适配器(Adapter)
-    - [ ] 🚡 桥接(Bridge)
+    - [X] 🚡 桥接(Bridge)
     - [ ] 🌿 组合(Composite)
     - [ ] ☕ 装饰器(Decorator)
     - [ ] 📦 外观(Facade)
