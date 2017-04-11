@@ -13,6 +13,7 @@
 * 结构型
     - 🔌 [适配器(Adapter)](adapter/README.md)
     - 🚡 [桥接(Bridge)](bridge/README.md)
+    - 🌿 [组合(Composite)](composite/README.md)
 * 行为性
 
 ## 证书 
@@ -27,9 +28,9 @@ MIT © [Da Shen](http://dashen.im)
     - [X] 🐑 原型(Prototype)
     - [X] 💍 单例(Singleton)
 * 结构型
-    - [x] 🔌 适配器(Adapter)
+    - [X] 🔌 适配器(Adapter)
     - [X] 🚡 桥接(Bridge)
-    - [ ] 🌿 组合(Composite)
+    - [X] 🌿 组合(Composite)
     - [ ] ☕ 装饰器(Decorator)
     - [ ] 📦 外观(Facade)
     - [ ] 🍃 享元(Flyweight)

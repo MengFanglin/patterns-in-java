@@ -16,6 +16,7 @@
         <module>prototype</module>
         <module>singleton</module>
         <module>bridge</module>
+        <module>composite</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
