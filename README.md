@@ -14,7 +14,8 @@
     - 🔌 [适配器(Adapter)](adapter/README.md)
     - 🚡 [桥接(Bridge)](bridge/README.md)
     - 🌿 [组合(Composite)](composite/README.md)
-    - ☕ [装饰器(Decorator)](decorator/README.md)
+    - ☕  [装饰器(Decorator)](decorator/README.md)
+    - 📦 [外观(Facade)](facade/README.md)
 * 行为性
 
 ## 证书 
@@ -33,7 +34,7 @@ MIT © [Da Shen](http://dashen.im)
     - [X] 🚡 桥接(Bridge)
     - [X] 🌿 组合(Composite)
     - [X] ☕ 装饰器(Decorator)
-    - [ ] 📦 外观(Facade)
+    - [X] 📦 外观(Facade)
     - [ ] 🍃 享元(Flyweight)
     - [ ] 🎱 代理(Proxy)
 * 行为型
