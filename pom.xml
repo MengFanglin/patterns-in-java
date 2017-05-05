@@ -19,6 +19,7 @@
         <module>composite</module>
         <module>decorator</module>
         <module>facade</module>
+        <module>flyweight</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -16,6 +16,7 @@
     - 🌿 [组合(Composite)](composite/README.md)
     - ☕  [装饰器(Decorator)](decorator/README.md)
     - 📦 [外观(Facade)](facade/README.md)
+    - 🍃 [享元(Flyweight)](flyweight/README.md)
 * 行为性
 
 ## 证书 
@@ -35,7 +36,7 @@ MIT © [Da Shen](http://dashen.im)
     - [X] 🌿 组合(Composite)
     - [X] ☕ 装饰器(Decorator)
     - [X] 📦 外观(Facade)
-    - [ ] 🍃 享元(Flyweight)
+    - [X] 🍃 享元(Flyweight)
     - [ ] 🎱 代理(Proxy)
 * 行为型
     - [ ] 🔗 责任链(Chain of Responsibility)
